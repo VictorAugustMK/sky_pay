@@ -23,6 +23,9 @@ async function usuarios() {
         fone VARCHAR(20),
         dt_nascimento DATE NOT NULL
       );
+      
+      GRANT SELECT, INSERT, UPDATE, DELETE ON skyart.usuarios TO postgres;
+
     `, { logging: false });
 
     console.log('Tabela "usuarios" criada com sucesso no esquema "skyart".');
