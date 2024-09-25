@@ -20,5 +20,23 @@ const getUsers = async (_req, res) => {
   }
 };
 
+const addUser = async (req, res) => {
+  const q =
+    "INSERT INTO skyart.usuarios(nome, email, fone, dt_nascimento) VALUES(?,?,?,?)";
+
+  const values = [
+    req.body.nome,
+    req.body.email,
+    req.body.fone,
+    req.body.dt_nascimento,
+  ];
+
+  try {
+    await db.query(q, values);
+    res.status(200).json("Usuário criado com sucesso.");
+  } catch (err) {
+    res.status(500).json(err);
+  }
+};
 
 module.exports = { getUsers, addUser };
