@@ -1,0 +1,20 @@
+{
+  "name": "projeto_faculdade",
+  "version": "1.0.0",
+  "description": "Projeto de Extenção de Bando de Dados",
+  "main": "index.js",
+
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Victor Augusto",
+  "license": "ISC",
+  "packageManager": "yarn@4.5.0+sha512.837566d24eec14ec0f5f1411adb544e892b3454255e61fdef8fd05f3429480102806bac7446bc9daff3896b01ae4b62d00096c7e989f1596f2af10b927532f39",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "nodemon": "^3.1.7",
+    "pg": "^8.13.0",
+    "sequelize": "^6.37.3"
+  }
+}
